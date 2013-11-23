@@ -2,9 +2,10 @@
 
 angular.module('bothSidesFrontEndApp', [
   'ngCookies',
-  'ngSanitize'
+  'ngSanitize',
+  'ngRoute'
 ])
-  .config(function ($routeProvider) {
+ .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
