@@ -5,10 +5,10 @@
   <div class="modal-body">
     <ul>
       <li ng-repeat="item in items">
-        <a ng-click="selected.item = item">{{ item }}</a>
+        <a ng-click="selected.item = item">{{ item.title }}</a>
       </li>
     </ul>
-    Selected: <b>{{ selected.item }}</b>
+    <b>{{ selected.item.content }}</b>
   </div>
   <div class="modal-footer">
     <button class="btn btn-warning" ng-click="ok()">Close</button>
