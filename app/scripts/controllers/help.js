@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('bothSidesFrontEndApp')
-    .controller('HelpCtrl', function ($scope, $modal, $log) {
+    .controller('HelpCtrl', ['$scope','$modal','$log', function ($scope, $modal, $log) {
 
         $scope.items = ['item1', 'item2', 'item3'];
 
@@ -31,4 +31,4 @@ angular.module('bothSidesFrontEndApp')
                 $log.info('Modal dismissed at: ' + new Date());
               });
           };
-      });
+      }]);
