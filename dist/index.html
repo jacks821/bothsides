@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="styles/93550f95.main.css"/>
+    <link rel="stylesheet" href="styles/70033eac.main.css"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
   <body ng-app="bothSidesFrontEndApp">
@@ -25,7 +25,7 @@
         <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+    <div class="header container-fluid">
       <div ng-controller="HeaderCtrl">
         <ul class="nav nav-pills pull-right">
           <li ng-class="{active: isCurrentPath('/about')}"><a ng-href="#/about">About</a></li>
@@ -40,20 +40,21 @@
             </ul>
           </li>
           <li ng-controller="HelpCtrl">
-            <button class="btn" ng-click="open()">?</button>
+            <button class="btn btn-info" ng-click="open()">?</button>
           </li>
         </ul>
       </div>
 
       <h3 class="text-muted"><a ng-href="#">BothSIDES</a></h3>
-
     </div>
 
-    <div class="container" ng-view=""></div>
+    <div class="container-fluid" ng-view=""></div>
 
-    <div class="footer">
-      <p>© 2013 BothSides</p>
-      <a href="https://github.com/shicholas/bothsides">This code is hosted on Github</a>
+    <div class="footer container-fluid">
+      <p>
+        © 2013 BothSides
+        <a href="https://github.com/shicholas/bothsides">This code is hosted on Github</a>
+      </p>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
