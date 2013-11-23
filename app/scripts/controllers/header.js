@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('bothSidesFrontEndApp')
-  .controller('HeaderCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('HeaderCtrl', ['$scope','$location', function ($scope, $location) {
+    $scope.isCurrentPath = function (path) {
+      return $location.path() === path;
+    };
+  }]);
