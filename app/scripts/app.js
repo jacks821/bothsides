@@ -3,7 +3,8 @@
 angular.module('bothSidesFrontEndApp', [
   'ngCookies',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui.bootstrap'
 ])
  .config(function ($routeProvider) {
     $routeProvider
