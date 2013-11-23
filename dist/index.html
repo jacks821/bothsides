@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="styles/cb121399.main.css"/>
+    <link rel="stylesheet" href="styles/93550f95.main.css"/>
   </head>
   <body ng-app="bothSidesFrontEndApp">
     <!--[if lt IE 7]>
@@ -24,19 +24,25 @@
         <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header" ng-controller="HeaderCtrl">
-      <ul class="nav nav-pills pull-right">
-        <li ng-class="{active: isActive('/#/')}"><a ng-href="#">Home</a></li>
-        <li ng-class="{active: isActive('/#/about')}"><a ng-href="#/about">About</a></li>
-        <li><a ng-href="#/contact">Contact</a></li>
-      </ul>
+    <div class="header">
+      <div ng-controller="HeaderCtrl">
+        <ul class="nav nav-pills pull-right">
+          <li ng-class="{active: isCurrentPath('/')}"><a ng-href="#">Home</a></li>
+          <li ng-class="{active: isCurrentPath('/about')}"><a ng-href="#/about">About</a></li>
+          <li ng-class="{active: isCurrentPath('/contact')}"><a ng-href="#/contact">Contact</a></li>
+        </ul>
+      </div>
       <h3 class="text-muted">BothSides</h3>
+      <div ng-controller="HelpCtrl">
+        <button class="btn" ng-click="open()">?</button>
+      </div>
     </div>
 
     <div class="container" ng-view=""></div>
 
     <div class="footer">
       <p>© 2013 BothSides</p>
+      <a href="https://github.com/shicholas/bothsides">This code is hosted on Github</a>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -55,8 +61,8 @@
 
     <script src="scripts/3233641e.plugins.js"></script>
 
-    <script src="scripts/b938a804.modules.js"></script>
+    <script src="scripts/bf33b3df.modules.js"></script>
 
-    <script src="scripts/bd30af4e.scripts.js"></script>
+    <script src="scripts/9d48efba.scripts.js"></script>
   </body>
 </html>
