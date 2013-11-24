@@ -96,3 +96,22 @@ body
 
 .container-fluid
     margin: 0 30px
+
+.animate-enter, .animate-leave
+    -webkit-transition:all 2s ease
+    -moz-transition:all 2s ease
+    -o-transition:all 2s ease
+    transition:all 2s ease
+    position:absolute
+
+.animate-enter
+    left: -100%
+
+.animate-enter.animate-enter-active
+    left: 0
+
+.animate-leave
+    left: 0
+
+.animate-leave.animate-leave-active
+    left: 100%
