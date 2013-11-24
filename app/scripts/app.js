@@ -24,15 +24,15 @@ angular.module('bothSidesFrontEndApp', [
         templateUrl: 'views/voters.html',
         controller: 'VotersCtrl'
       })
-      .when('/createDispute', {
+      .when('/disputes/create', {
         templateUrl: 'views/createDispute.html',
         controller: 'CreatedisputeCtrl'
       })
-      .when('/dispute', {
+      .when('/disputes', {
         templateUrl: 'views/dispute.html',
         controller: 'DisputeCtrl'
       })
-      .when('/manageDispute', {
+      .when('/disputes/:id/manage', {
         templateUrl: 'views/manageDispute.html',
         controller: 'ManagedisputeCtrl'
       })
@@ -40,13 +40,9 @@ angular.module('bothSidesFrontEndApp', [
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
       })
-      .when('/signUp', {
-        templateUrl: 'views/signUp.html',
-        controller: 'SignupCtrl'
-      })
-      .when('/signIn', {
-        templateUrl: 'views/signIn.html',
-        controller: 'SigninCtrl'
+      .when('/disputes/:id', {
+        templateUrl: 'views/disputeDetail.html',
+        controller: 'DisputedetailCtrl'
       })
       .otherwise({
         redirectTo: '/'
