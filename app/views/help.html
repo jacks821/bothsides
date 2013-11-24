@@ -8,7 +8,7 @@
         <a ng-click="selected.item = item">{{ item.title }}</a>
       </li>
     </ul>
-    <b>{{ selected.item.content }}</b>
+    <span ng-bind-html="selected.item.content"> </span>
   </div>
   <div class="modal-footer">
     <button class="btn btn-warning" ng-click="ok()">Close</button>

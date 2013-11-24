@@ -10,11 +10,15 @@ angular.module('bothSidesFrontEndApp')
             },
             {
                 title: 'Creating a Dispute',
-                content: 'To create a dispute'
+                content: 'To create a dispute:<br>1.  <a href="/signup">Sign Up</a><br>2.  Click "Create a Dispute"<br>3.  Accept the Terms of Service<br>4.  Choose your Parameters (i.e. Term of Voting, Character Limit)<br>5.  Write your Side of the Story<br>6.  Submit and Wait for Other Side'
             },
             {
                 title: 'Voting on a Dispute',
-                content: 'To vote a dispute please select a dispute page and read the rules.'
+                content: 'To vote on a dispute:<br>1.  <a href="/signup">Sign Up</a> and <a href="/signin">Sign In</a><br>2.  Click the Voter tab in the top corner<br>3.  Scroll to "Open Disputes"<br>4.  Click on any Dispute<br>5.  Vote!'
+            },
+            {
+                title: 'Sign Up for BothSides',
+                content: 'To Sign Up to Vote or Create a Dispute:<br>1.  Go to the <a href="/signup/">Sign Up</a> Page<br>2.  Enter your Sign Up Information<br>3.  Hit Enter and VOTE!'
             }];
 
         $scope.open = function () {
