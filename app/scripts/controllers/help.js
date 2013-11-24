@@ -14,7 +14,7 @@ angular.module('bothSidesFrontEndApp')
             },
             {
                 title: 'Voting on a Dispute',
-                content: 'To vote on a dispute:<br>1.  <a href="/signup">Sign Up</a> and <a href="/signin">Sign In</a><br>2.  Click the Voter tab in the top corner<br>3.  Scroll to "Open Disputes"<br>4.  Click on any Dispute<br>5.  Vote!'
+                content: 'To vote on a dispute:<br>1.  <a href="/signup">Sign Up</a> and <a href="/signin">Sign In</a><br>2.  Click your personalized tab in the top corner<br>3.  Scroll to "Vote on Disputes"<br>4.  Click on any Dispute<br>5.  Vote!'
             },
             {
                 title: 'Sign Up for BothSides',
